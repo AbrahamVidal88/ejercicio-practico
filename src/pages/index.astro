@@ -13,24 +13,20 @@ import Card from '../components/Card.astro';
 		</head>
 		<body>
 			<header class="header"> 
-			<div class="menu container">
-				<a href="#" class="logo">X Capital</a>
-				<input type="checkbox" id="menu"/>
-				<label for="menu">
-					<img src="images/menu.png" class="menu-icono" alt="menu">
-				</label>
+				<div class="logo">
+                    <img src='xbox41.png'>
+                </div>
 				<nav class="navbar">
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Plataformas</a></li>
 						<li><a href="#">Productos</a></li>
-						<div class="buttons4">
-							<a href="#" class="btn-4">Contactanos</a>
-						</div>
 					</ul>
 				</nav>
-				
-			</div>
+                <div class="buttons4">
+                    <a href="#" class="btn-4">Contactanos</a>
+                </div>
+            </header>
 			<div class="header-content container">
 				<div class="header-txt" >
 					<span>Lorem ipsum dolor sit amet</span>
@@ -40,16 +36,11 @@ import Card from '../components/Card.astro';
 					<div class="button-container">
 						<a href="#" class="btn-get-started">Get Started</a>
 					</div>
-					{/*<div class="buttons">
-						<a href="#" class="btn-1">Informacion</a>
-						<a href="#" class="btn-1">Leer mas</a>
-					</div>*/}
 				</div>
 				<div class="header-img">
 					<img src='cel1.png'>
 				</div>
 			</div>
-			</header>
 			<main class="products container">
 		
 				<h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
@@ -171,7 +162,9 @@ import Card from '../components/Card.astro';
 
 
 *{
- margin: 0;
+ margin: 2;
+ margin-left: 2px;
+ margin-right: 2px;
  padding: 0;
  box-sizing: border-box;
  text-decoration: none;
@@ -182,6 +175,39 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .logo img:hover{
+    transform:  scale(1.2);
+}
+.header .navbar ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .navbar li:hover{
+    transform: scale(1.1);
+}
+.header .navbar a{
+    font-size: 700;
+    color:#000000;
+    text-decoration: none;
+}
+.header .navbar li a:hover{
+    color: #007706;
+}
 img{
     max-width: 100%;
 }
@@ -190,76 +216,6 @@ img{
 	width: 650px;
 	height: 650px;
 }
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header{
-    display: flex;
-    align-items: center;
-    padding: 130px 0 0 0;
-}
-
-.menu{
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    font-size: 25px;
-    color: #027f1f;
-    text-transform: uppercase;
-	margin: 55px;
-	margin-top: 0;
-}
-
-.menu .navbar ul li {
-    position: relative;
-    float: left;
-}
-
-.menu .navbar ul li a{
-    font-size: 18px;
-    padding: 10px;
-	display: block;
-	text-align: right;
-    color: #111419;
-}
-
-.menu .navbar ul li a:hover{
-    color: #188103;
-}
-
-#menu{
-    display: none;
-}
-
-.menu-icono{
-    width: 25px;
-}
-
-.menu label{
-    cursor: pointer;
-    display: none;
-}
-
-table{
-    width: 100%;
-}
-
-th, td{
-    color: #ffffff;
-}
-
-
-
 .header-content{
 	margin-left: 55px;
 	margin-right: 55px;
@@ -347,16 +303,18 @@ span {
 }
 
 .btn-4{
-    display: inline-block;
-    padding: 13px 25px;
+    font-weight: 700;
+    padding: 9px 25px;
     background-color: #007706;
 	color:#f8f8f8;
-	border-radius: 20px;
-    margin-right: 20px;
+	border-radius: 50px;
     text-transform: capitalize;
-    margin-bottom: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
-
+.header .btn-4:hover{
+   transform: scale(1.1); 
+}
 .header-img{
     flex-basis: 50%;
     text-align: center;
