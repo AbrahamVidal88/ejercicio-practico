@@ -19,12 +19,12 @@ import Card from '../components/Card.astro';
 				<nav class="navbar">
 					<ul>
 						<li><a href="#">Home</a></li>
-						<li><a href="#">Plataformas</a></li>
-						<li><a href="#">Productos</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem</a></li>
 					</ul>
 				</nav>
                 <div class="buttons4">
-                    <a href="#" class="btn-4">Contactanos</a>
+                    <a href="#" class="btn-4">Contact</a>
                 </div>
             </header>
 			<div class="header-content container">
@@ -34,16 +34,21 @@ import Card from '../components/Card.astro';
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sed quam maiores vel veniam ab quasi eius. Adipisci necessitatibus error illo architecto!
 					</p>
 					<div class="button-container">
-						<a href="#" class="btn-get-started">Get Started</a>
+                        <button class="secondary-btn">Lorem ipsum dolor sit amet</button>
+						<button class="btn-get-started">Get Started →</button>
 					</div>
+                    <div class="social-media">
+                        <a href="#"><img src="face.png" alt="Facebook">Facebook</a>
+                        <a href="#"><img src="linkedin.png" alt="LinkedIn">LinkedIn</a>
+                        <a href="#"><img src="instagr.png" alt="Instagram">Instagram</a>
+                    </div>
 				</div>
 				<div class="header-img">
 					<img src='cel1.png'>
 				</div>
 			</div>
 			<main class="products container">
-		
-				<h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+				<h2>Lorem ipsum dolor sit, amet consectetur adipisicing amet</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsa atque provident suscipit, delectus, deserunt eligendi aspernatur ad perspiciatis placeat harum amet ratione. Necessitatibus ratione, in officiis delectus sit optio!</p>
 			  
 				<div class="box-container" id="list-1">
@@ -90,69 +95,11 @@ import Card from '../components/Card.astro';
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sed quam maiores vel veniam ab quasi eius. Adipisci necessitatibus error illo architecto!
 					</p>
 					<div class="button-container">
-						<a href="#" class="btn-get-started">Contact</a>
+						<button class="contact">Contact</button>
+                        <button class="learn-more-btn">Learn more</button>
 					</div>
 				</div>
 			</div>
-			<section class="Testimonial container">
-				<span>Testimonial</span>
-					<h2>Que opinan nuestros clientes</h2>
-					<div class="Testimonial-content">
-						<div class="testimonial-1">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Reprehenderit quidem aut, nam, obcaecati veniam cupiditate 
-								consectetur illum, repudiandae necessitatibus tempore similique 
-								et dolores officiis excepturi? 
-								A delectus excepturi optio sequi.
-							</p>
-							<img src="images/starts.png" alt="">
-							<h4>Lorem impsum</h4>
-						</div>
-						<div class="testimonial-1">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Reprehenderit quidem aut, nam, obcaecati veniam cupiditate 
-								consectetur illum, repudiandae necessitatibus tempore similique 
-								et dolores officiis excepturi? 
-								A delectus excepturi optio sequi.
-							</p>
-							<img src="images/starts.png" alt="">
-							<h4>Lorem impsum</h4>
-						</div>
-					</div>
-			</section>
-			<footer class="footer">
-				<div class="footer-content container">
-					<div class="link">
-						<h3>Lorem</h3>
-						<ul>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-						</ul>
-					</div>
-					<div class="link">
-						<h3>Lorem</h3>
-						<ul>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-						</ul>
-					</div>
-					<div class="link">
-						<h3>Lorem</h3>
-						<ul>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
 		</body>
 	</main>
 </Layout>
@@ -195,7 +142,7 @@ body {
 }
 .header .navbar ul li{
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 20px ;
 }
 .header .navbar li:hover{
     transform: scale(1.1);
@@ -233,7 +180,7 @@ img{
 }
 .header-txt2{
 	flex-basis: 50%;
-    margin-right: 25px;
+    margin-right: 55px;
 }
 
 .header-txt{
@@ -267,23 +214,6 @@ span {
     text-align: center;
 }
 
-.btn-get-started {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #027f1f;
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.btn-get-started:hover {
-    background-color: #027f1f;
-    transform: scale(1.05);
-}
-
 .buttons{
     display: flex;
 }
@@ -292,14 +222,77 @@ span {
 	display: flex;
 }
 
-.btn-1{
-    display: inline-block;
-    padding: 13px 25px;
+.contact, .btn-get-started, .secondary-btn {
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-get-started{
+background-color: #188103;
+    color: #fff;
+}
+
+.btn-get-started:hover {
     background-color: #188103;
-    margin-right: 20px;
-    color: #ffffff;
-    text-transform: capitalize;
-    margin-bottom: 100px;
+    transform: scale(1.05);
+}
+.secondary-btn {
+    background-color: #ecf0f1;
+    color: #7f8c8d;
+    margin-right: 10px;
+}
+
+
+.secondary-btn:hover {
+    background-color: #bdc3c7;
+    transform: scale(1.05);
+}
+.contact{
+background-color: #188103;
+    color: #fff;
+}
+
+.contact:hover {
+    background-color: #188103;
+    transform: scale(1.05);
+}
+.learn-more-btn{
+    border-color: #188103;
+    padding: 14px 30px;
+    font-size: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.learn-more-btn {
+    background-color: #ecf0f1;
+    color: #7f8c8d;
+    margin-right: 10px;
+}
+
+.learn-more-btn:hover {
+    background-color: #bdc3c7;
+    transform: scale(1.05);
+}
+.social-media {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: flex;
+    font-size: 16px;
+    margin-top: 50px;
+    color: #000000;
+}
+
+.social-media a img {
+    height: 30px;
 }
 
 .btn-4{
@@ -322,43 +315,6 @@ span {
 
 .header-img img{
     height: 550px;
-}
-.oferts {
-    padding: 100px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.offert-1{
-    flex-basis: calc(33.3% - 20px);
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.b1 {
-    background-color: #13462e;
-}
-.b2{
-    background-color: #13462e;
-}
-.b3{
-    background-color: #13462e;
-}
-
-.offert-txt {
-    flex-basis: 50%;
-}
-.offert-txt h3{
-    color: #ffffff;
-    font-size: 20px;
-}
-.offert-txt a{
-    color: #ffffff;
-}
-.offert-img{
-    flex-basis: 50%;;
 }
 .products{
 padding: 0 0 50px 0;
@@ -403,119 +359,7 @@ text-align: center;
     margin-bottom: 25px;
     color: #515557;
  }
-
-.precio{
-    font-size: 17px;
-    font-weight: 700;
-    color: #166602 !important;
-}
-
-.btn-2, .btn-3{
-    background-color: #188103;
-    margin-top: 50px;
-    display: inline-block;
-    padding: 11px 35px;
-    border-radius: 25px;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-2:hover, .btn-3:hover, .btn-1:hover{
-    background-color: #13462e;
-}
-
-.btn-3{
-    margin: 0;
-    padding: 8px 25px;
-    border-radius: 5px;
-}
-
-.Testimonial{
-    padding: 100px 0;
-    text-align: center;
-}
-.Testimonial-content{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-.testimonial-1{
-    flex-basis: calc(50% - 20px);
-    padding: 50px;
-    text-align: left;
-    background-color: #f6fafb;
-    border-top: 5px solid #166602;
-}
-
-.testimonial-1 img{
-    width: 100px;
-}
-
-.testimonial-1 h4{
-    font-size: 17px;
-    color: #111419;
-}
-
-.testimonial-1 p{
-    color: #515557;
-    margin-bottom: 25px;
-}
-
-.footer{
-    background-color: #13462e;
-    padding: 100px 0;
-}
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-}
-.link h3{
-    color: #ffffff;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-.link a{
-    color: #b8b5bb76;
-}
-.link a:hover{
-    color: #188552;
-}
-
 @media (max-width:991px){
-    .menu{
-        padding: 20px;
-    }
-    .menu label{
-        display: initial;
-    }
-    .menu .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #13462e;
-        display: none;
-    }
-    .menu .navbar ul li{
-        width: 100%;
-    }
-    #menu:checked ~ .navbar{
-        display: initial;
-    }
-    .logo{
-        display: none;
-    }
-    .menu .navbar ul li a:hover{
-        color: #ffffff;
-    }
-
-    .submenu:hover #carrito{
-        width: 100%;
-    }
-
     .header{
         padding: 50px 0 0 0;
     }
@@ -530,39 +374,11 @@ text-align: center;
     .buttons{
         justify-content: center;
     }
-    .btn-1{
-        margin-bottom: 0;
-    }
     .header-img{
         display: none;
     }
-    .oferts{
-        padding: 30px;
-        flex-direction: column;
-    }
-    .offert-1{
-        margin-bottom: 15px;
-    }
     .products{
         padding: 0 30px 30px 30px;
-    }
-    .Testimonial{
-        padding: 30px;
-    }
-    .Testimonial-content{
-        margin-top: 20px;
-        flex-direction: column;
-    }
-    .testimonial-1{
-        padding: 25px;
-        margin-bottom: 25px
-    }
-    .footer{
-        padding: 30px;
-    }
-    .footer-content{
-        flex-direction: column;
-        text-align: center;
     }
 }
 </style>
